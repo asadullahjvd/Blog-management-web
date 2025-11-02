@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-900 text-white min-h-screen flex items-center justify-center px-4">
+  <div class="w-full max-w-md bg-zinc-800 rounded-2xl shadow-lg p-8">
+    <h1 class="text-3xl font-bold text-center text-white mb-6">Upload File</h1>
+
+    <form autocomplete="off" action="/upload" method="POST" enctype="multipart/form-data" class="space-y-4">
+      <input type="file" name="image">
+
+      <input
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition duration-200"
+        type="submit" value="Upload Profile picture" />
+    </form>
+
+    <p class="text-center text-sm text-gray-400 mt-4">
+      Already have an account?
+      <a href="/login" class="text-blue-500 hover:underline">Login here</a>
+    </p>
+  </div>
+</body>
+
+</html>
